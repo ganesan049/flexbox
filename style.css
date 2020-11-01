@@ -5,17 +5,46 @@ body {
   border: 6px solid black;
   /* act as a block lvl element */
   display: flex;
-  flex-flow: row-reverse wrap;
+
+  /* justify-content:  will apply to both row and column; in main axis */
+  /* defafut  */
+  /* left to right  default */
+  /* justify-content: flex-start; */
+  /* right to left  */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* align-items:  will apply to both row and column; in cross axis */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* align-items: baseline; */
+
+  /* align-content:  for multiple rows to be aligned; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+
+  /* short hand for direction:  and wrap ; */
+  /* flex-flow: row-reverse wrap; */
+
   /* responsive to move down  */
-  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap;  */
   /* responsive to move up  */
   /* flex-wrap: wrap-reverse; */
+
   /* left to right  default */
   /* flex-direction: row; */
   /* right to left  */
   /* flex-direction: row-reverse; */
+
   /* top to down  */
-  /* height: 400px; */
+  height: 800px;
   /* flex-direction: column; */
   /* bottom to top ; */
   /* flex-direction: column-reverse; */
@@ -26,30 +55,57 @@ body {
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
+  /* default 0  */
+  /* flex-grow: 1; */
+  
+  /* default 1 */
+  /* flex-shrink: 4; */
+
+  /* flex-grow: flex-shrink flex-basis; */
+  /* flex: 1 5 200px; */
+
+  align-self: flex-end;
 }
 .item-1 {
   background-color: aqua;
-}
-.item-1 {
-  background-color: aqua;
+  /* padding-bottom: 3rem; */
+  align-self: start;
 }
 .item-2 {
   background-color: orange;
+  /*order: 1;*/
+  /* font-size: 3rem; */
+  align-self: flex-end;
 }
 .item-3 {
   background-color: red;
+  /*order: -1*/
+  /* padding-bottom: 3rem; */
+  align-self: center;
 }
 .item-4 {
   background-color: black;
+  /* flex-shrink: 4; */
+  /*order: 5;*/
+
+  /* default value auto  */
+  /* width: 400px;
+  flex-basis: 400px; */
 }
 .item-5 {
   background-color: blue;
+  /* flex-grow: 1; */
+  /*order: 4;*/
+  align-self: baseline;
 }
 .item-6 {
   background-color: yellow;
+  /* flex-grow: 2; */
+  /*order: 1;*/
 }
 .item-7 {
   background-color: indigo;
+  /*order: -2*/
 }
 .item-8 {
   background-color: green;
